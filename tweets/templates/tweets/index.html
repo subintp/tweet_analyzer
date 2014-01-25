@@ -1,0 +1,9 @@
+{% if tweet_list %}
+    <ul>
+    {% for tweet in tweet_list %}
+        <li>{{ tweet.text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No tweets are available.</p>
+{% endif %}
